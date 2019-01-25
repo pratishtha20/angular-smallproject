@@ -1,0 +1,19 @@
+<table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let forms of form">
+      <td>{{ forms.id  }}</td>
+      <td>{{ forms.firstname  }}</td>
+      <td>{{ forms.lastname }}</td>
+    </tr>
+  </tbody>
+
+</table>
