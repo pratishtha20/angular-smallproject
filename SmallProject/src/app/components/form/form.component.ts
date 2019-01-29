@@ -19,6 +19,6 @@ export class FormComponent  {
         this.form = form_p;
     console.log("Pratishtha");
     console.log(this.form);
-  }
+     }
 
 }

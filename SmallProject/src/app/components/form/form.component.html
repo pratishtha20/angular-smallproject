@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
 <form #myform="ngForm" class="form-group"  ngNativeValidate  (ngSubmit)="submit(myform.form)" >
   <div class="form-group">
       Id : <input type="text" name="id" ngModel required> <br>
@@ -17,3 +18,25 @@
       </button>
   
   </form>
+  <div *ngIf = "form">
+  <table class="table table-hover">
+
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr>
+          <td>{{ form.value.id  }}</td>
+          <td>{{ form.value.firstname  }}</td>
+          <td>{{ form.value.lastname }}</td>
+        </tr>
+      </tbody>  
+   
+    
+    </table>
+    </div>
